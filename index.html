@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Portfolio Builder</title>
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src ="main.js"></script>
+</head>
+<body>
+	
+	<div class="title-area">
+		<h1 class="title">
+			Portfolio Builder
+		</h1>
+	</div>
+	<div class="outerbox">
+		<div class="outerselectbox">
+		<div class="select-box">
+
+			<div class="item-head">
+				<div class="symbol-head">Ticker</div>
+				<div class="price-head">Price</div>
+				<div class="pchange-head">Price Change</div>
+				<div class="amount-input-head">Allocation</div>
+				<div class="alloc-amount-head">Total</div>
+			</div>
+
+			<div class="item">
+				<div class="symbol">UWTI</div>
+				<div class="price">1.67</div>
+				<div class="pchange">0.11</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+			</div>
+			<div class="item">
+				<div class="symbol">BAC</div>
+				<div class="price">12.32</div>
+				<div class="pchange">0.19</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+			</div>
+			<div class="item">
+				<div class="symbol">SUNE</div>
+				<div class="price">1.72</div>
+				<div class="pchange">0.46</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+			</div>
+			<div class="item">
+				<div class="symbol">VXX</div>
+				<div class="price">24.16</div>
+				<div class="pchange">-0.86</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+			</div>
+			<div class="item">
+				<div class="symbol">PFE</div>
+				<div class="price">30.59</div>
+				<div class="pchange">0.57</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+
+			</div>
+			<div class="item">
+				<div class="symbol">ETE</div>
+				<div class="price">6.80</div>
+				<div class="pchange">-0.37</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+
+			</div>
+			<div class="item">
+				<div class="symbol">FTR</div>
+				<div class="price">5.31</div>
+				<div class="pchange">0.01</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+
+			</div>
+			<div class="item">
+				<div class="symbol">CHK</div>
+				<div class="price">2.56</div>
+				<div class="pchange">-0.13</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+
+			</div>
+			<div class="item">
+				<div class="symbol">DUST</div>
+				<div class="price">4.26</div>
+				<div class="pchange">-0.20</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+
+			</div>
+			<div class="item">
+				<div class="symbol">GE</div>
+				<div class="price">29.23</div>
+				<div class="pchange">0.50</div>
+				<input class="amount-input" type="number" min=0 value=0>
+				<div class="alloc-amount">0.00</div>
+
+			</div>
+
+			
+		</div> 
+	
+		<!--total row goes here -->
+		<div class="totals-selectbox">
+				<div class="total-row">Total/Avg</div>
+				<div class="price">0.00</div>
+				<div class="pchange">0.00</div>
+				<div class="amount-input">0</div>
+				<div class="alloc-amount">0.00</div>
+			</div>
+
+		</div>
+
+		<div class="group-area">
+
+			<div class="selected-title">High</div>
+			<div class="item-head">
+				<div class="symbol-head">Ticker</div>
+				<div class="price-head">Price</div>
+				<div class="pchange-head">Price Change</div>
+				<div class="amount-input-head">Allocation</div>
+				<div class="alloc-amount-head">Total</div>
+			</div> 
+			<div class="list-box" id ="high-area"></div>
+
+			<div class="selected-title">Mid</div>
+			<div class="item-head">
+				<div class="symbol-head">Ticker</div>
+				<div class="price-head">Price</div>
+				<div class="pchange-head">Price Change</div>
+				<div class="amount-input-head">Allocation</div>
+				<div class="alloc-amount-head">Total</div>
+			</div> 
+			<div class="list-box" id ="mid-area"></div>
+
+
+			<div class="selected-title">Low</div>
+			<div class="item-head">
+				<div class="symbol-head">Ticker</div>
+				<div class="price-head">Price</div>
+				<div class="pchange-head">Price Change</div>
+				<div class="amount-input-head">Allocation</div>
+				<div class="alloc-amount-head">Total</div>
+			</div> 
+			<div class="list-box" id ="low-area"></div>
+
+
+		</div>
+	</div>
+
+
+
+</body>
+</html>

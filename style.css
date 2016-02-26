@@ -1,0 +1,164 @@
+*,html{
+	height:100%;
+	margin:0px;
+}
+
+.title-area{
+	height:10%;
+	background-color:grey;
+}
+
+.outerbox{
+	height:80%;
+}
+
+.item, .item-head{
+	display:block;
+	height:4%;
+}
+
+.item{
+	padding:1px;
+}
+
+.item-head{
+	background-color:black;
+	color:white;
+}
+
+.symbol, .symbol-head
+{
+	display:inline-table;
+	width:15%;
+}
+
+
+
+.symbol
+{
+	background-color: grey;
+}
+
+.price,.price-head
+{
+	display:inline-table;
+	width:15%;
+	text-align: right;
+}
+
+.pchange,.pchange-head
+{
+	display:inline-table;
+	width:25%;
+	text-align: right;
+}
+
+.amount-input-head{
+	display:inline-table;
+	width:20%;
+	text-align: right;
+}
+
+.alloc-amount, .alloc-amount-head{
+	display:inline-table;
+	width:15%;
+	text-align: right;
+}
+
+.select-box{
+	display:block;
+	float:left;
+	height:90%;
+	width:100%;
+	border:1px black solid;
+}
+
+.outerselectbox{
+	float:left;
+	height:100%;
+	width:49%;
+	border:1px black solid;
+}
+
+
+
+.group-area{
+	float:left;
+	height:100%;
+	width:50%;
+	border:1px black solid;	
+}
+
+.list-box{
+	display:inline-block;
+	height:20%;
+	border:2px black solid;
+	width:100%;
+	padding-bottom:3%;
+	margin-top:0%;
+
+}
+
+.selected-title{
+	display:inline-block;
+	height:4%;
+	background-color: black;
+	color:white;
+	width:100%;
+	padding:0px;
+	margin:0px;
+}
+
+.selected{
+	border:2px solid red;
+}
+
+input[type=number]{
+	margin-top:0px;
+	padding-top:0px;
+	text-align: right;
+}
+
+.totals-selectbox{
+	color: grey;
+	display:block;
+	height:5%;
+
+}
+
+.total-row{
+	padding-top:10px;
+	display:inline-table;
+}
+
+.amount-input{
+	width:20%;
+}
+
+.totals-selectbox>.total-row{
+	display: inline-table;
+width:15%;
+}
+.totals-selectbox>.price{
+		display: inline-table;
+width: 15%;
+}
+.totals-selectbox>.pchange{
+		display: inline-table;
+width: 25%;
+}
+.totals-selectbox>.amount-input{
+	text-align: right;
+		display: inline-table;
+width: 20%;
+}
+.totals-selectbox>.alloc-amount{
+		text-align: right;
+		display: inline-table;
+width: 15%;
+}
+
+
+.list-box>.item{
+	height:15%;
+}
