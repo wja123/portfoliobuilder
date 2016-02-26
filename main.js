@@ -3,6 +3,7 @@ var docReady=$(document).ready(init);
 function init(){
 	updateTotals();
 	$(".select-box").on('click',".amount-input",amountInpHandler);
+	$(".select-box").on('change',".amount-input",amountInpHandler);
 	$(".list-box").on('click',".amount-input",amountInpHandler);
 	$(".select-box").on('click',".item",clickHandler);
 	$(".list-box").on('click','.item',clickHandler);
@@ -15,10 +16,9 @@ function amountInpHandler(event){
 
 //updates allocation amount
 var $parElem = $(this).parent();
-	$parElem.find(".alloc-amount").text(parseFloat($(this).val()) * parseFloat($(this).parent().find(".price").text()));
+	$parElem.find(".alloc-amount").text((parseFloat($(this).val()) * parseFloat($(this).parent().find(".price").text())).toFixed(2));
 
 	var $totalElem = $(this).parent().parent().find(".totals").find("." + $(this).attr("class"));
-	$totalElem.text("testing");
 	updateTotals();
 }
 
@@ -115,38 +115,3 @@ function returnHandler(){
 
 }
 
-
-/* view-source:http://markitondemand.github.io/DataApis/LookupSample/ modified slightly
-$.ajax({
-						beforeSend: function(){ 
-							console.log("presend");
-						},
-						url: "http://dev.markitondemand.com/api/v2/Lookup/jsonp",
-						dataType: "jsonp",
-						data: {
-							input: request.term
-						},
-						success: function(data) {
-							response( $.map(data, function(item) {
-								return {
-									label: item.Name + " (" +item.Exchange+ ")",
-									value: item.Symbol
-								}
-							}));
-							$("span.help-inline").hide();
-						}
-					});
-				},
-				minLength: 0,
-				select: function( event, ui ) {
-					//console.log(ui.item);
-					$("span.label-info").html("You selected " + ui.item.label).fadeIn("fast");
-				},
-				open: function() {
-					//$(this).removeClass("ui-corner-all").addClass("ui-corner-top");
-				},
-				close: function() {
-					//$(this).removeClass("ui-corner-top").addClass("ui-corner-all");
-				}
-			});
-		*/
